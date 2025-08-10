@@ -57,15 +57,19 @@ cd Textlens
 bash
 Copy
 Edit
-```cmd
+```bash
 pip install -r requirements.txt
 ```
 ### 3️⃣ Configure environment variables
 Create a .env file in the root directory:
-```cmd
-ini
-Copy
-Edit
+```ini
 GROQ_API_KEY=your_groq_api_key_here
 ```
+### 4️⃣ Run the FastAPI server
+```bash
+uvicorn app.main:app --reload
+```
+Server will start at: http://127.0.0.1:8000
+
+
 
