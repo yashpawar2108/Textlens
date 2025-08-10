@@ -31,6 +31,15 @@ It allows users to **analyze, summarize, and transform** text through an intuiti
 - ThreadPoolExecutor – Efficient background processing.
 
 ---
+## Preview
+![demo](demo.png)
+
+---
+
+## Architecture Diagram
+![Architecture_diagram](diagram.png)
+
+---
 
 ## 📂 Project Structure
 ```txt
@@ -102,13 +111,3 @@ Contributions are welcome!
    ```bash
    git checkout -b feature/awesome-feature
    ```
----
-
-## Architecture Diagram
-![Architecture_diagram](diagram.png)
-
----
-
-## Preview
-![demo](demo.png)
-
