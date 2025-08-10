@@ -33,3 +33,25 @@ It allows users to **analyze, summarize, and transform** text through an intuiti
 ---
 
 ## 📂 Project Structure
+Textlens/
+│── app/
+│ ├── main.py # FastAPI entry point
+│ ├── routes/ # API routes
+│ ├── services/ # LLM and PDF processing logic
+│── static/ # CSS, JS, images
+│── templates/ # HTML frontend
+│── requirements.txt # Python dependencies
+│── .env.example # Example environment variables
+│── README.md # Project documentation
+
+## ⚡ Quick Start
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/yashpawar2108/Textlens.git
+cd Textlens
+### 2️⃣ Install dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
