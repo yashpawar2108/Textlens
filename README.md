@@ -107,4 +107,8 @@ Contributions are welcome!
 ## Architecture Diagram
 ![Architecture_diagram](diagram.png)
 
+---
+
+## Preview
+![demo](demo.png)
 
