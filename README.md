@@ -101,3 +101,10 @@ Contributions are welcome!
 2. Create a new branch:  
    ```bash
    git checkout -b feature/awesome-feature
+   ```
+---
+
+## Architecture Diagram
+![Architecture_diagram](diagram.png)
+
+
