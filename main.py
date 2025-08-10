@@ -101,7 +101,7 @@ os.makedirs(CACHE_DIR, exist_ok=True)
 # --- Bearer Token Authentication ---
 EXPECTED_TOKEN = os.environ.get(
     "HACKRX_BEARER_TOKEN",
-    "7ae90faf72ce42e929314a6192e64395286019a5982e85589efeab8312d6061f"
+    "23rjbh3h9ucn8nwuch8ef8soci9eyh3enfksbff"
 )
 
 def verify_bearer_token(authorization: str = Header(...)):
