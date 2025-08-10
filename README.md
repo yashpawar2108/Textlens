@@ -33,6 +33,7 @@ It allows users to **analyze, summarize, and transform** text through an intuiti
 ---
 
 ## 📂 Project Structure
+```txt
 Textlens/
 │── app/
 │ ├── main.py # FastAPI entry point
@@ -43,6 +44,7 @@ Textlens/
 │── requirements.txt # Python dependencies
 │── .env.example # Example environment variables
 │── README.md # Project documentation
+```
 
 ## ⚡ Quick Start
 
@@ -50,6 +52,7 @@ Textlens/
 ```bash
 git clone https://github.com/yashpawar2108/Textlens.git
 cd Textlens
+```
 2️⃣ Install dependencies
 bash
 Copy
