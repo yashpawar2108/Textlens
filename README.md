@@ -53,8 +53,19 @@ Textlens/
 git clone https://github.com/yashpawar2108/Textlens.git
 cd Textlens
 ```
-2️⃣ Install dependencies
+### 2️⃣ Install dependencies
 bash
 Copy
 Edit
+```cmd
 pip install -r requirements.txt
+```
+### 3️⃣ Configure environment variables
+Create a .env file in the root directory:
+```cmd
+ini
+Copy
+Edit
+GROQ_API_KEY=your_groq_api_key_here
+```
+
