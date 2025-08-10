@@ -50,7 +50,7 @@ Textlens/
 ```bash
 git clone https://github.com/yashpawar2108/Textlens.git
 cd Textlens
-### 2️⃣ Install dependencies
+2️⃣ Install dependencies
 bash
 Copy
 Edit
