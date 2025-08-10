@@ -74,37 +74,30 @@ Server will start at: http://127.0.0.1:8000
 ---
 
 ## 🖥️ Usage
-Open your browser at http://127.0.0.1:8000
+1. Open your browser at **[http://127.0.0.1:8000](http://127.0.0.1:8000)**
+2. Paste or upload text/PDF
+3. Choose an action:
+   - **Summarize** text
+   - **Analyze** sentiment and context
+   - **Transform** text style/tone
+4. Get instant results powered by **Groq LLM** 🚀
 
-Paste or upload text/PDF
+---
 
-Choose:
+## 🔒 Security
+- Keep your `.env` file private and **never commit it to Git**.
+- Add `.env` to `.gitignore` to prevent sensitive information from being tracked.
 
-Summarize text
+---
 
-Analyze sentiment and context
+## 📜 License
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
-Transform text style/tone
+---
 
-Get instant results powered by Groq LLM 🚀
-
-### 🔒 Security
-Keep your .env file private and never commit it to Git.
-
-Use .gitignore to prevent sensitive information from being tracked.
-
-### 📜 License
-This project is licensed under the MIT License – see the LICENSE file for details.
-
-### 🤝 Contributing
-Contributions are welcome!
-
-Fork the repo
-
-Create a new branch (feature/awesome-feature)
-
-Commit changes
-
-Open a Pull Request
-
-
+## 🤝 Contributing
+Contributions are welcome!  
+1. Fork the repo  
+2. Create a new branch:  
+   ```bash
+   git checkout -b feature/awesome-feature
