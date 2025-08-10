@@ -1,0 +1,41 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Environment variables and credentials
+.env
+*.env
+config.json
+credentials.json
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# IDE & editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Bytecode & build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Static cache files
+staticfiles/

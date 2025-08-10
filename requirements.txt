@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+aiohttp
+aiofiles
+pdfplumber
+langchain
+langchain-community
+langchain-groq
+sentence-transformers
+scikit-learn
+numpy
+faiss-cpu
+pydantic
+redis

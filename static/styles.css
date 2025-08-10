@@ -1,0 +1,70 @@
+/* styles.css — TextLens Premium Theme */
+:root{
+  --bg-1:#0b1220; --bg-2:#071421; --card:#0f1724; --muted:#9aa4b2; --accent:#19b4a9;
+  --accent-2:#6478ff; --glass: rgba(255,255,255,0.03); --radius:14px; --maxw:1200px;
+  --ui-gap:14px; --shadow: 0 10px 30px rgba(2,6,23,0.6);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#e9f5fb;background:linear-gradient(180deg,var(--bg-1),#021018)}
+.container{max-width:var(--maxw);margin:28px auto;padding:0 18px}
+.site-header{padding:18px 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:44px;width:44px;border-radius:10px;object-fit:contain}
+.brand-text .title{font-size:20px;font-weight:700}
+.brand-text .tag{font-size:13px;color:var(--muted)}
+.nav-controls{display:flex;gap:8px;align-items:center}
+.token-field{width:260px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.btn{padding:8px 12px;border-radius:10px;border:0;background:rgba(255,255,255,0.03);color:inherit;cursor:pointer}
+.btn.primary{background:linear-gradient(90deg,var(--accent-2),var(--accent));color:#012}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.03)}
+.btn.small{padding:6px 8px;font-size:13px}
+.small{font-size:13px}
+.muted{color:var(--muted)}
+.tiny{font-size:12px}
+.main-grid{display:grid;grid-template-columns:360px 1fr;gap:20px;margin-top:8px}
+.panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,0.03)}
+.intro h1{margin:4px 0;font-size:28px}
+.cta-row{display:flex;gap:12px;margin:16px 0}
+.features{margin:10px 0 0 18px;color:var(--muted)}
+.screenshot{margin-top:12px}
+
+.chat-panel{display:flex;flex-direction:column;height:72vh}
+.chat-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.chat-window{flex:1;overflow:auto;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));border:1px solid rgba(255,255,255,0.03)}
+.messages{display:flex;flex-direction:column;gap:12px}
+.empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px;color:var(--muted)}
+.empty-illustration{font-size:42px;margin-bottom:6px}
+
+/* message bubbles */
+.msg{display:flex;gap:12px;align-items:flex-start;max-width:80%;}
+.msg.user{align-self:flex-end;flex-direction:row-reverse}
+.avatar{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:var(--glass)}
+.bubble{padding:12px 14px;border-radius:12px;line-height:1.4;background:rgba(255,255,255,0.02);backdrop-filter:blur(2px)}
+.msg.user .bubble{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#002}
+.meta{font-size:12px;color:var(--muted);margin-top:6px}
+
+/* composer */
+.composer{display:flex;gap:8px;padding-top:12px;align-items:flex-end}
+.input-wrap{flex:1}
+#msgInput{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;resize:none}
+.composer-actions{display:flex;gap:8px}
+
+/* animations */
+.msg{animation:fadeIn .32s ease both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* responsive */
+@media(max-width:980px){
+  .main-grid{grid-template-columns:1fr;}
+  .token-field{width:140px}
+  .brand-text .title{font-size:16px}
+  .chat-panel{height:64vh}
+}
+
+/* dark theme alt */
+body.theme-dark{background:linear-gradient(180deg,#071017,#000409);color:#e6f3fb}
+body.theme-dark .panel{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005))}
+
+/* small helpers */
+.copy-badge{display:inline-block;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:12px}

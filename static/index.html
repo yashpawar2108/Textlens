@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TextLens — Document Chat</title>
+  <meta name="description" content="TextLens — AI-powered document Q&A. Upload PDFs and ask questions." />
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="theme-light">
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand" id="brand">
+        <!-- Put your logo at /static/assets/logo.png. A placeholder SVG is used if missing -->
+        <img id="logoImg" src="/static/assets/logo.png" alt="TextLens" onerror="this.style.display='none'" />
+        <div class="brand-text">
+          <div class="title">TextLens</div>
+          <div class="tag">Smart answers from your documents</div>
+        </div>
+      </div>
+
+      <nav class="nav-controls">
+        <button id="themeToggle" class="btn ghost" title="Toggle theme">🌙</button>
+        <input id="tokenField" class="token-field" placeholder="Paste bearer token" />
+        <button id="saveToken" class="btn">Save</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main: Landing + Chat -->
+  <main class="container main-grid">
+    <!-- Landing / Intro Column -->
+    <section class="panel intro" id="landingPanel">
+      <div class="intro-inner">
+        <h1>Welcome to <strong>TextLens</strong></h1>
+        <p class="muted">Upload any PDF and instantly ask questions. TextLens reads, indexes, and answers with source-aware responses.</p>
+
+        <div class="cta-row">
+          <label class="upload-cta btn primary" id="uploadBtn">Upload PDF</label>
+          <input id="realFile" type="file" accept="application/pdf" style="display:none" />
+          <button id="openChat" class="btn ghost">Open Chat</button>
+        </div>
+
+        <ul class="features">
+          <li>Hybrid retrieval (semantic + BM25)</li>
+          <li>Fast responses with smart model routing</li>
+          <li>Secure: bearer-token protected</li>
+        </ul>
+
+        <div class="screenshot small muted">Pro tip: Save your token for faster testing (localStorage).</div>
+      </div>
+    </section>
+
+    <!-- Chat Column -->
+    <section class="panel chat-panel" id="chatPanel">
+      <div class="chat-header">
+        <div class="doc-info">
+          <div id="uploadedFileName" class="muted tiny">No document uploaded</div>
+          <div id="docControls">
+            <button id="clearDoc" class="btn ghost small">Clear</button>
+            <button id="viewDoc" class="btn ghost small">View</button>
+            <button id="clearCache" class="btn ghost small">Clear Cache</button>
+          </div>
+        </div>
+        <div class="chat-stats">
+          <div id="statusIndicator" class="tiny muted">Disconnected</div>
+        </div>
+      </div>
+
+      <div id="chatWindow" class="chat-window" aria-live="polite">
+        <div id="messages" class="messages">
+          <div class="empty-state" id="emptyState">
+            <div class="empty-illustration">🔍</div>
+            <h3>Ask anything about your uploaded PDF</h3>
+            <p class="muted">Upload a PDF from the left, then ask questions in the chat below.</p>
+          </div>
+        </div>
+      </div>
+
+      <form id="composer" class="composer" onsubmit="return false;">
+        <div class="input-wrap">
+          <textarea id="msgInput" placeholder="Type your question..." rows="1"></textarea>
+        </div>
+        <div class="composer-actions">
+          <button id="sendBtn" class="btn primary">Ask</button>
+          <button id="copyBtn" class="btn ghost" title="Copy last response">Copy</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> TextLens — Built for speed & clarity</div>
+      <div class="tiny muted">Backend endpoints: <code>/api/v1/hackrx</code></div>
+    </div>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
