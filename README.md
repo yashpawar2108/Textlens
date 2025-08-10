@@ -71,5 +71,40 @@ uvicorn app.main:app --reload
 ```
 Server will start at: http://127.0.0.1:8000
 
+---
+
+## 🖥️ Usage
+Open your browser at http://127.0.0.1:8000
+
+Paste or upload text/PDF
+
+Choose:
+
+Summarize text
+
+Analyze sentiment and context
+
+Transform text style/tone
+
+Get instant results powered by Groq LLM 🚀
+
+### 🔒 Security
+Keep your .env file private and never commit it to Git.
+
+Use .gitignore to prevent sensitive information from being tracked.
+
+### 📜 License
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+### 🤝 Contributing
+Contributions are welcome!
+
+Fork the repo
+
+Create a new branch (feature/awesome-feature)
+
+Commit changes
+
+Open a Pull Request
 
 
